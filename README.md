@@ -2,7 +2,7 @@
 # HexaShield-Radar 🚀/HexaTrack-ESP32/SonicArray-6Z/HexaSense-Radar/MultiScan-Shield/ProxiShield-6Z/HexaGuard-Radar
 
 
-![Circuit Diagram](Screenshot 2026-07-19 213135.png)
+![Circuit Diagram]<img src="Screenshot 2026-07-19 213135.png" alt="Circuit Diagram" width="100%">
 
 An interactive multi-zone proximity monitoring system simulated in Wokwi using an ESP32. The system tracks distance threats across 6 individual zones, relying on a high-priority active audio buzzer alarm system to flag close-range hazards while tracking live device orientation via an IMU sensor.
 
