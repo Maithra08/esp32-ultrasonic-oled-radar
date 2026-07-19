@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -67.2, "left": 81.64, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -228.9, "left": -436.1, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic2", "top": -497.7, "left": -436.1, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic3", "top": 30.3, "left": -436.1, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic4", "top": 279.9, "left": -445.7, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic5", "top": 510.3, "left": -455.3, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic6", "top": 750.3, "left": -445.7, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": -15.38, "left": 501.52, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 195.14,
+      "left": 489.83,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 184.8,
+      "left": 88.2,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 454.6,
+      "left": 632.75,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 456,
+      "left": 690.65,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 454.6,
+      "left": 498.35,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 454.6,
+      "left": 546.35,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r5",
+      "top": 454.6,
+      "left": 767.15,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r6",
+      "top": 454.6,
+      "left": 815.15,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r7",
+      "top": 310.6,
+      "left": 565.55,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r8",
+      "top": 310.6,
+      "left": 699.95,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r9",
+      "top": 310.6,
+      "left": 603.95,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r10",
+      "top": 310.6,
+      "left": 738.35,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r11",
+      "top": 310.6,
+      "left": 853.55,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r12",
+      "top": 310.6,
+      "left": 882.35,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": -528,
+      "left": -412.8,
+      "attrs": { "text": "FRONT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": -259.2,
+      "left": -422.4,
+      "attrs": { "text": "FRONT LEFT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": 0,
+      "left": -422.4,
+      "attrs": { "text": "FRONT RIGHT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text4",
+      "top": 249.6,
+      "left": -403.2,
+      "attrs": { "text": "REAR SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text5",
+      "top": 480,
+      "left": -432,
+      "attrs": { "text": "REAR LEFT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text6",
+      "top": 720,
+      "left": -432,
+      "attrs": { "text": "REAR RIGHT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text7",
+      "top": 412.8,
+      "left": 873.6,
+      "attrs": { "text": "REAR RIGHT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text8",
+      "top": 403.2,
+      "left": 508.8,
+      "attrs": { "text": "REAR LEFT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text9",
+      "top": 403.2,
+      "left": 700.8,
+      "attrs": { "text": "REAR SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text10",
+      "top": 602,
+      "left": 644.33,
+      "attrs": { "text": "FRONT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text11",
+      "top": 595.2,
+      "left": 787.2,
+      "attrs": { "text": "FRONT RIGHT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text12",
+      "top": 624,
+      "left": 451.2,
+      "attrs": { "text": "FRONT LEFT SENSOR\n" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text13",
+      "top": 259.2,
+      "left": 134.4,
+      "attrs": { "text": "BUZZER" }
+    },
+    { "type": "wokwi-text", "id": "text14", "top": 288, "left": 528, "attrs": { "text": "OLED" } },
+    {
+      "type": "wokwi-text",
+      "id": "text15",
+      "top": 9.6,
+      "left": 585.6,
+      "attrs": { "text": "MPU6050" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 537.4,
+      "left": 504.1,
+      "rotate": 180,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb2",
+      "top": 499,
+      "left": 676.9,
+      "rotate": 180,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb3",
+      "top": 499,
+      "left": 801.7,
+      "rotate": 180,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb4",
+      "top": 345.4,
+      "left": 878.5,
+      "rotate": 180,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb5",
+      "top": 335.8,
+      "left": 724.9,
+      "rotate": 180,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb6",
+      "top": 335.8,
+      "left": 600.1,
+      "rotate": 180,
+      "attrs": { "common": "cathode" }
+    },
+    { "type": "wokwi-74hc595", "id": "sr1", "top": -39.6, "left": 763.84, "attrs": {} },
+    { "type": "wokwi-74hc595", "id": "sr2", "top": -39.6, "left": 946.24, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "oled1:GND", "esp:GND.1", "black", [ "v-38.4", "h-480", "v-19.2" ] ],
+    [ "oled1:VCC", "esp:3V3", "red", [ "v-57.6", "h-335.85", "v-249.6", "h-67.2" ] ],
+    [ "imu1:VCC", "esp:3V3", "red", [ "v-124.8", "h-479.92", "v86.4" ] ],
+    [ "imu1:GND", "esp:GND.1", "black", [ "v-115.2", "h-460.72", "v201.6" ] ],
+    [ "imu1:SCL", "esp:22", "orange", [ "v-9.6", "h-316.72" ] ],
+    [ "imu1:SDA", "esp:21", "green", [ "v-19.2", "h-67.12", "v38.4" ] ],
+    [ "oled1:SDA", "esp:21", "green", [ "v-86.4", "h-335.93", "v-105.6" ] ],
+    [ "oled1:SCL", "esp:22", "orange", [ "v-67.2", "h-335.7", "v-153.6" ] ],
+    [ "ultrasonic2:VCC", "esp:5V", "magenta", [ "v76.8", "h393.6", "v76.8", "h0", "v230.4" ] ],
+    [ "ultrasonic1:VCC", "esp:5V", "magenta", [ "v86.4", "h384", "v86.4" ] ],
+    [ "ultrasonic3:VCC", "esp:5V", "magenta", [ "v76.8", "h364.8", "v-67.2" ] ],
+    [ "ultrasonic4:VCC", "esp:5V", "magenta", [ "v67.2", "h364.8", "v-182.4", "h0", "v-57.6" ] ],
+    [ "ultrasonic5:VCC", "esp:5V", "magenta", [ "v48", "h364.8", "v-163.2" ] ],
+    [ "ultrasonic6:VCC", "esp:5V", "red", [ "v57.6", "h460.8", "v-316.8", "h-0.15" ] ],
+    [ "ultrasonic2:TRIG", "esp:26", "cyan", [ "v67.2", "h393.2", "v230.4", "v153.6" ] ],
+    [ "ultrasonic2:ECHO", "esp:25", "blue", [ "v57.6", "h392.8", "v9.6" ] ],
+    [ "ultrasonic2:GND", "esp:GND.1", "black", [ "v48", "h411.6", "v268.8", "v19.2" ] ],
+    [ "ultrasonic1:TRIG", "esp:13", "cyan", [ "v76.8", "h354.8", "v86.4" ] ],
+    [ "ultrasonic1:GND", "esp:GND.1", "black", [ "v57.6", "h411.6", "v96" ] ],
+    [ "ultrasonic3:TRIG", "esp:14", "cyan", [ "v67.2", "h345.2", "v-124.8" ] ],
+    [ "ultrasonic3:ECHO", "esp:27", "blue", [ "v57.6", "h325.6", "v-124.8" ] ],
+    [ "ultrasonic3:GND", "esp:GND.1", "black", [ "v48", "h382.8", "v-67.2" ] ],
+    [ "ultrasonic4:TRIG", "esp:33", "cyan", [ "v57.6", "h383.6", "v-403.2" ] ],
+    [ "ultrasonic4:ECHO", "esp:32", "blue", [ "v48", "h316", "v-297.6" ] ],
+    [ "ultrasonic4:GND", "esp:GND.1", "black", [ "v38.4", "h382.8", "v-259.2" ] ],
+    [ "ultrasonic5:TRIG", "esp:19", "cyan", [ "v38.4", "h614", "v-384" ] ],
+    [ "ultrasonic5:ECHO", "esp:34", "blue", [ "v28.8", "h316", "v-633.6" ] ],
+    [ "ultrasonic5:GND", "esp:GND.1", "black", [ "v19.2", "h382.8", "v-412.8" ] ],
+    [ "ultrasonic6:TRIG", "esp:4", "cyan", [ "v48", "h566", "v-816" ] ],
+    [ "esp:2", "ultrasonic6:ECHO", "blue", [ "h86.4", "v787.2", "h-623.2" ] ],
+    [ "ultrasonic6:GND", "esp:GND.1", "black", [ "v28.8", "h382.8", "v-508.8", "h0", "v-105.6" ] ],
+    [ "bz1:2", "esp:5", "red", [ "v9.6", "h153.2", "v-230.4" ] ],
+    [ "bz1:1", "esp:GND.1", "black", [ "v0", "h-67.2", "v-182.4" ] ],
+    [ "r8:2", "esp:18", "yellow", [ "h0", "v-200.4", "h-441.6", "v-48" ] ],
+    [ "r7:2", "esp:4", "yellow", [ "h9.6", "v-66" ] ],
+    [ "esp:27", "r11:2", "yellow", [ "h-19.05", "v115.2", "h806.4" ] ],
+    [ "r12:2", "esp:27", "magenta", [ "v1.2", "h-854.4", "v-230.4" ] ],
+    [ "esp:12", "ultrasonic1:ECHO", "blue", [ "v0", "h-76.65", "v-144", "h-355.2" ] ],
+    [ "rgb1:R", "r4:1", "magenta", [ "v-67.2", "h19.2" ] ],
+    [ "rgb1:G", "r3:1", "yellow", [ "v0" ] ],
+    [ "rgb2:G", "r1:1", "yellow", [ "v0" ] ],
+    [ "rgb2:R", "r2:2", "magenta", [ "v0" ] ],
+    [ "rgb3:G", "r5:1", "yellow", [ "v0" ] ],
+    [ "rgb3:R", "r6:1", "magenta", [ "v0" ] ],
+    [ "rgb4:G", "r11:1", "yellow", [ "v0" ] ],
+    [ "rgb4:R", "r12:1", "magenta", [ "v0" ] ],
+    [ "rgb5:G", "r8:1", "yellow", [ "v0" ] ],
+    [ "rgb5:R", "r10:1", "magenta", [ "v0" ] ],
+    [ "rgb6:G", "r7:1", "yellow", [ "v0" ] ],
+    [ "rgb6:R", "r9:1", "magenta", [ "v0" ] ],
+    [ "rgb3:COM", "rgb2:COM", "black", [ "v0" ] ],
+    [ "rgb2:COM", "rgb1:COM", "black", [ "v0.4", "h-172.8" ] ],
+    [ "rgb4:COM", "rgb3:COM", "black", [ "h38.3", "v153.6" ] ],
+    [ "rgb5:COM", "rgb4:COM", "black", [ "v0.4", "h153.6" ] ],
+    [ "rgb6:COM", "rgb5:COM", "black", [ "v0" ] ],
+    [ "rgb1:COM", "esp:GND.1", "black", [ "v-18.8", "h-489.7", "v-451.2" ] ],
+    [ "sr1:VCC", "esp:3V3", "red", [ "v-37.2", "h-681.6" ] ],
+    [ "sr1:STCP", "esp:16", "green", [ "v0" ] ],
+    [ "sr1:DS", "esp:15", "green", [ "v0" ] ],
+    [ "sr1:SHCP", "esp:2", "green", [ "v0" ] ],
+    [ "sr1:OE", "esp:GND.1", "black", [ "v-37.2", "h-720", "v163.2" ] ],
+    [ "sr1:GND", "esp:GND.1", "black", [ "h19.2", "v-67.2", "h-777.6", "v163.2" ] ],
+    [ "sr1:MR", "esp:3V3", "green", [ "v-46.8", "h-758.4", "v48" ] ],
+    [ "sr2:Q7", "sr1:DS", "cyan", [ "v38.4", "h-144", "v-76.8", "h-76.8" ] ],
+    [ "sr2:SHCP", "esp:2", "green", [ "v-18", "h-796.8", "v153.6" ] ],
+    [ "sr2:STCP", "esp:16", "green", [ "v-27.6", "h-796.8", "v134.4" ] ],
+    [ "sr2:OE", "esp:GND.1", "green", [ "v-66", "h-902.4", "v192" ] ],
+    [ "sr2:MR", "esp:3V3", "green", [ "v-75.6", "h-950.4", "v76.8" ] ],
+    [ "sr2:VCC", "esp:3V3", "red", [ "v-114", "h-892.8", "v115.2" ] ],
+    [
+      "sr2:GND",
+      "esp:GND.1",
+      "black",
+      [ "v38.4", "h38.4", "v-192", "h-864", "v86.4", "h-124.8", "v163.2" ]
+    ],
+    [ "sr1:Q1", "r2:1", "magenta", [ "h9.6", "v441.6" ] ],
+    [ "sr1:Q2", "r1:2", "green", [ "v19.2", "h-38.4" ] ],
+    [ "sr1:Q3", "r4:2", "magenta", [ "v48", "h-211.2", "v392.4" ] ],
+    [ "sr1:Q4", "r3:2", "green", [ "v67.2", "h-288", "v134.4", "h-28.8", "v115.2" ] ],
+    [ "r6:2", "sr1:Q5", "magenta", [ "h0", "v-421.2", "h-48" ] ],
+    [ "r5:2", "sr1:Q6", "green", [ "h0", "v-296.4", "h28.8" ] ]
+  ],
+  "dependencies": {}
+}
