@@ -1,9 +1,27 @@
 # esp32-ultrasonic-oled-radar
-# HexaShield-Radar 🚀
+# HexaShield-Radar 🚀/HexaTrack-ESP32/SonicArray-6Z/HexaSense-Radar/MultiScan-Shield/ProxiShield-6Z/HexaGuard-Radar
+
 
 ![Circuit Diagram](Screenshot 2026-07-19 213135.png)
 
 An interactive multi-zone proximity monitoring system simulated in Wokwi using an ESP32. The system tracks distance threats across 6 individual zones, relying on a high-priority active audio buzzer alarm system to flag close-range hazards while tracking live device orientation via an IMU sensor.
+
+---
+
+## 🌍 Universal Vehicle Safety Application
+This project is designed as a **Universal, Low-Cost Safety Model** that can be easily scaled and retrofitted onto virtually any vehicle platform. Whether installed on **compact cars, commercial delivery trucks, heavy transport vehicles, or construction equipment**, it serves as an affordable driver-assistance solution. 
+
+By utilizing accessible components like the ESP32 and highly efficient shift registers, this system brings high-end multi-zone blind-spot tracking and collision avoidance to everyone, significantly reducing accident rates without requiring expensive factory upgrades.
+
+---
+
+## 🚀 Practical Applications
+Because of its flexible, 6-zone scanning matrix and low cost, this system is highly effective for:
+
+* **Commercial Fleet & Truck Blind-Spot Detection:** Monitors the vast blind spots along the sides and rear of long cargo trucks or delivery vans, alerting drivers to hidden cyclists or smaller vehicles during tight turns.
+* **Low-Cost Reverse Parking Assistant:** Provides older or budget-friendly car models with a comprehensive 360-degree parking radar framework, complete with clear audio tones and directional visual alerts.
+* **Heavy Machinery Safety Zones:** Deployed on construction vehicles, excavators, or forklifts to instantly warn operators if ground crew members or static obstacles enter their hazardous swinging or moving radius.
+* **Agricultural Equipment Navigation:** Assists tractors and harvesters operating in low-visibility field conditions by tracking physical barriers, terrain drops, or fence boundaries.
 
 ---
 
