@@ -1,6 +1,8 @@
 # esp32-ultrasonic-oled-radar
 # ESP32 Multi-Zone Ultrasonic Radar System 🚀
 
+![Circuit Diagram Layout](Screenshot%202026-07-19%20093613.png)
+
 An interactive multi-zone proximity monitoring system simulated in Wokwi using an ESP32. The system tracks distances across 6 individual zones, alerts the user visually and audibly to obstacles, and monitors device orientation via an IMU sensor.
 
 ---
